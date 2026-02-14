@@ -1,7 +1,7 @@
-window.API_CONFIG = { baseUrl: 'https://xxx.xxx.com' };
+window.API_CONFIG = { baseUrl: 'https://api-view.cathiefish.org' };
 
 const AUTH_CONFIG = {
-    clientId: 'xxxxxxxxxxxxxxxxxxxxxxxxxx.apps.googleusercontent.com',
+    clientId: '136939086552-bt28icv34nucmjna8hfndr6bopr5qcp4.apps.googleusercontent.com',
     onSuccess: (user) => {
         console.log('Authentication successful:', user.email);
     },
@@ -11,4 +11,4 @@ const AUTH_CONFIG = {
 };
 
 window.AUTH_CONFIG = AUTH_CONFIG;
-window.ALLOWED_EMAILS = ['your-email@gmail.com'];
+window.ALLOWED_EMAILS = ['xiannvweideta@gmail.com'];
