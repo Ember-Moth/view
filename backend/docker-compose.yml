@@ -1,6 +1,6 @@
 services:
   backend:
-    image: ghcr.io/exchanges-lab/statistic/backend:v1.2
+    image: ghcr.io/exchanges-lab/view/backend:latest
     container_name: backend
     networks:
       - cycle

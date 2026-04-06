@@ -11,4 +11,3 @@ const AUTH_CONFIG = {
 };
 
 window.AUTH_CONFIG = AUTH_CONFIG;
-window.ALLOWED_EMAILS = ['your-email@gmail.com'];
