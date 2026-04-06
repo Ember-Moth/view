@@ -126,14 +126,6 @@
                 const credential = response.credential;
                 const userData = parseJwt(credential);
 
-                // Email whitelist verification
-                const allowedEmails = window.ALLOWED_EMAILS || ['your-email@gmail.com'];
-                if (!allowedEmails.includes(userData.email)) {
-                    document.getElementById('error-msg').textContent = 'Access denied: unauthorized email.';
-                    document.getElementById('error-msg').style.display = 'block';
-                    return;
-                }
-
                 const user = {
                     email: userData.email,
                     name: userData.name,
