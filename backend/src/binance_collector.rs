@@ -304,7 +304,7 @@ impl BinanceCollector {
         let streams: Vec<String> = symbols.iter()
             .map(|s| format!("{}@kline_1m", s.to_lowercase()))
             .collect();
-        let url = format!("wss://fstream.binance.com/stream?streams={}", streams.join("/"));
+        let url = format!("wss://fstream.binance.com/market/stream?streams={}", streams.join("/"));
 
         let (ws_stream, _) = connect_async(&url)
             .await
